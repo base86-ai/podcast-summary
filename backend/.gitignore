@@ -1,0 +1,9 @@
+.env
+node_modules
+
+# Temp media files
+upload-*.mp3
+tmp-*.mp3
+upload-*.wav
+tmp-*.wav
+
