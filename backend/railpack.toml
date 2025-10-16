@@ -1,0 +1,13 @@
+[build]
+builder = "railpack"
+base = "node:18"
+
+[phases.install]
+cmds = [
+  "apt-get update -y && apt-get install -y ffmpeg wget python3 python3-pip",
+  "pip install yt-dlp",
+  "npm install"
+]
+
+[phases.start]
+cmd = "npm start"
